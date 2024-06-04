@@ -145,16 +145,13 @@
         <section class="formulario">
             <div class="interface" id="contato">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-                <form action="https://api.staticforms.xyz/submit" method="POST" class="form" id="contatos">
-                    <input type="nome" name="nome" id="contatos" placeholder="seu nome completo" required>
-                    <input type="email" name="email" id="contatos" placeholder="seu e-mail" required>
-                    <input type="numero" name="numero" id="contatos" placeholder="seu celular" required>
-                    <textarea name="texto" id="texto" placeholder="sua mensagem" cols="30" rows="10"></textarea>
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="accessKey" value="40f68e6c-e06a-4017-a72f-5ba81b631be1">
-                    <input type="hidden" name="redirectTo"
-                        value="http://127.0.0.1:5500/Portifolio%20Personalizado/index.html">
-                    <div class="btn-enviar"> <input type="submit" value="ENVIAR"></div>
+                <form class="form" id="contatos" action="#" method="get" onsubmit="abrirWhatsapp()">
+                    <h2>POSSUI ALGUMA DUVIDA ? ENTRE EM CONTATO.</h2>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                    <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+                    <div class="btn-enviar"> <input type="submit" value="ENVIAR"></div><span>Enviar dados</span>
                 </form>
             </div>
         </section>
